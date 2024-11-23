@@ -203,4 +203,4 @@ class PwmSimpleLed(LightEntity, RestoreEntity):
 
 def _from_hass_brightness(brightness):
     """Convert Home Assistant brightness units to percentage."""
-    return brightness / 255
+    return brightness / 255 or DEFAULT_BRIGHTNESS
